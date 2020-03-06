@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAME:"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMAIL:"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/txtName"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/txtNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MOBILE PHONE:"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/txtEmail"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/txtName"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/colorAccent"
+
+        />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/txtEmail"
+        android:layout_below="@id/edName"
+        android:textColor="@color/colorAccent"
+        />
+
+    <EditText
+        android:id="@+id/edNumber"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/txtNumber"
+        android:layout_below="@+id/edEmail"
+        android:textColor="@color/colorAccent"
+        />
+
+    <EditText
+        android:id="@+id/edRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="---no records---"
+        android:layout_below="@id/txtNumber"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        />
+
+    <Button
+        android:id="@+id/btnWrite"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="WRITE"
+        android:background="@color/colorAccent"
+        android:layout_marginLeft="20dp"
+        android:onClick="Write"
+        />
+
+    <Button
+        android:id="@+id/btnRead"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="READ"
+        android:background="@color/colorAccent"
+        android:layout_marginLeft="120dp"
+        android:onClick="Read"
+        />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="UPDATE"
+        android:background="@color/colorAccent"
+        android:layout_marginLeft="220dp"
+        android:onClick="Update"
+        />
+
+    <Button
+        android:id="@+id/btnRemove"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="REMOVE"
+        android:background="@color/colorAccent"
+        android:layout_marginLeft="320dp"
+        android:onClick="Remove"
+        />
+
+</RelativeLayout>
