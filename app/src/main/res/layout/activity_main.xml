@@ -66,8 +66,8 @@
         android:textColor="@color/colorAccent"
         />
 
-    <EditText
-        android:id="@+id/edRecord"
+    <TextView
+        android:id="@+id/txtRecord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
@@ -88,7 +88,6 @@
         android:text="WRITE"
         android:background="@color/colorAccent"
         android:layout_marginLeft="20dp"
-        android:onClick="Write"
         />
 
     <Button
@@ -100,7 +99,7 @@
         android:text="READ"
         android:background="@color/colorAccent"
         android:layout_marginLeft="120dp"
-        android:onClick="Read"
+
         />
 
     <Button
@@ -112,7 +111,7 @@
         android:text="UPDATE"
         android:background="@color/colorAccent"
         android:layout_marginLeft="220dp"
-        android:onClick="Update"
+
         />
 
     <Button
@@ -124,7 +123,7 @@
         android:text="REMOVE"
         android:background="@color/colorAccent"
         android:layout_marginLeft="320dp"
-        android:onClick="Remove"
+
         />
 
 </RelativeLayout>
